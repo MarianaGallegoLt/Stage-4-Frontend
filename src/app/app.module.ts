@@ -5,16 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { PersonalInformationViewComponent } from './views/personal-information-view/personal-information-view.component';
+import { ResidentialInformationViewComponent } from './views/residential-information-view/residential-information-view.component';
+import { ResumeViewComponent } from './views/resume-view/resume-view.component';
+import { ViewsModule } from './views/views.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    PersonalInformationViewComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    ViewsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
